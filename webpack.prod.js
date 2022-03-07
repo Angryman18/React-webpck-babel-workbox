@@ -9,11 +9,12 @@ const {InjectManifest} = require("workbox-webpack-plugin");
 
 module.exports = {
   mode: "production",
-  entry: path.join(__dirname, "./src/index.js"),
+  entry: path.resolve(__dirname, "./src/index.js"),
   output: {
-    path: path.join(__dirname, "dist"),
+    path: path.resolve(__dirname, "dist"),
     filename: "bundle[contenthash].js",
-    clean: true
+    clean: true,
+    publicPath: "/"
   },
   module: {
     rules: [
@@ -40,7 +41,7 @@ module.exports = {
   },
   plugins: [
     new htmlWebpackPlugin({
-      template: path.join(__dirname, "public", "index.html"),
+      template: path.resolve(__dirname, "public", "index.html"),
     }),
     new miniCssExtractPlugin({ filename: "[contenthash].css" }),
     new dotenv({
