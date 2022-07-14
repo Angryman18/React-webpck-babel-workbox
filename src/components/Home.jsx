@@ -9,7 +9,7 @@ const Home = () => {
           React with Webpack and Babel Setup is Complete
         </span>
         <span>Commit on 10-03-2021, 10:56 AM</span>
-        <img className='w-[500px] h-[300px] object-center object-cover absolute top-0 left-0 right-0 bottom-0' src={ReactImage} alt='' />
+        <img className='w-[500px] h-[300px] object-center object-cover' src={ReactImage} alt='' />
       </div>
     </div>
   );
