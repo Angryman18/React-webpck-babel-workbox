@@ -3,9 +3,9 @@ import ReactImage from "../images/react-pic.png";
 
 const Home = () => {
   return (
-    <div className=''>
+    <div className='mt-40'>
       <div className='flex justify-center flex-col items-center h-3/4'>
-        <span className='text-2xl my-4 text-center z-10 text-white'>
+        <span className='text-2xl my-4 text-center text-white'>
           React with Webpack and Babel Setup is Complete
         </span>
         <span>Commit on 10-03-2021, 10:56 AM</span>
